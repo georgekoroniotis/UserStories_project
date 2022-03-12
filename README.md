@@ -71,9 +71,9 @@ PrintScrreen of Running Program 1 (User Story 1):
 ![image](https://user-images.githubusercontent.com/97738060/158017307-113d4bea-95bf-46b6-8066-37ad11d3ab8f.png)
 
 <h3>Sources</h3>
-Table Schema (https://support.google.com/analytics/answer/3437719?hl=en)
-eCommerce Calculation Rate (https://www.meliorum.com.au/blog/matching-big-query-data-with-google-analytics-acquisition-channel-report)
-GoogleAPIs BigQueries (https://github.com/googleapis/python-bigquery/tree/35627d145a41d57768f19d4392ef235928e00f72)
+Table Schema (https://support.google.com/analytics/answer/3437719?hl=en)<br>
+eCommerce Calculation Rate (https://www.meliorum.com.au/blog/matching-big-query-data-with-google-analytics-acquisition-channel-report)<br>
+GoogleAPIs BigQueries (https://github.com/googleapis/python-bigquery/tree/35627d145a41d57768f19d4392ef235928e00f72)<br>
 
 
 
