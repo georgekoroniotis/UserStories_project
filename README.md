@@ -66,9 +66,12 @@ How to calculate conversion rate:
 Initiate Git in Google Cloud Platform:
 ![image](https://user-images.githubusercontent.com/97738060/158016772-c227be21-8d96-4a4b-8a72-04216feec6ab.png)
 
-Run program 1:
+PrintScrreen of Running Program 1 (User Story 1):
 
 ![image](https://user-images.githubusercontent.com/97738060/158017307-113d4bea-95bf-46b6-8066-37ad11d3ab8f.png)
+
+<h3>Sources<h3>:
+Table Schema (https://support.google.com/analytics/answer/3437719?hl=en)
 
 
 
