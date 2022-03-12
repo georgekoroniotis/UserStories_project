@@ -34,11 +34,16 @@ def conversion_rate(date):
     query_job = client.query(QUERY)  # API request
     rows = query_job.result()  # Waits for query to finish
 
-    print('UserType | Platform | ConversionRate')
-    print('------------------------------------')
+    print('UserType   | Platform   | ConversionRate')
+    print('----------------------------------------')
     for row in rows:
-        print("{} | {} | {}".format(row.UserType, row.Platform, row.eCom_conversion_rate) )
-        
+        UserType = row['UserType']
+        Platform = row['Platform']
+        ConversionRate = row['eCom_conversion_rate']
+        print(f'{UserType:<10} | {Platform:<10} | {ConversionRate:>4,}')
+               
 
-date = '20170101'
-conversion_rate(date)
+if __name__ == "__main__":
+    date = '20170101'
+    conversion_rate(date)
+
