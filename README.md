@@ -1,24 +1,26 @@
 # UserStories_project
 Reporting some metrics of the data in the Big Query tables.
 
-Using Pycharm IDE, I created a new project named UserStories_project.
+The scope of this projects by using the sample dataset, which contains obfuscated Google Analytics 360 data from the Google Merchandise Store is:
+* To create a program that calculates the ecommerce Conversion Rate for a given day. The result set should be the User Type (New or Returning user) and the Platform (Desktop, Web, Mobile, Tablet).
+* To create a program that fetches all users with the timestamp of their first session and their time to convert.
 
-Next, using the terminal I created a new virtual environment, activated it and continued with the installation of google-cloud-bigquery packages as follow:
+Two programs have been implemented for the first calculation:
+- user_story_01_sql.py (SQL calculation)
+- user_story_01_python.py (Python calculation utilizing Pandas library)
+while
+One program has been implemented for the second calculation:
+-user_story_02.py (SQL implementation)
 
-```
-pip install virtualenv
-virtualenv BigQueryEnv
-BigQueryEnv\Scripts\activate
-BigQueryEnv\Scripts\pip.exe install google-cloud-bigquery
-```
+For the implementation process:
+1. Create or use an existing project in the Google Cloud Platform. e.g. My first Project
+2. Go to Google Cloud Shell Editor (https://cloud.google.com/shell)
+3. Create a new folder 
+4. Start writing code!
 
-Next, upgrade pip if need be,
+![image](https://user-images.githubusercontent.com/97738060/158053750-fd71c0c3-e408-48b3-839e-a325ad09e9c1.png)
 
-```
-BigQueryEnv\Scripts\python.exe -m pip install --upgrade pip
-```
-
-In order to test my new virtual environment, I created a .py file named test.py with the following code:
+In order to test my editor, I created a .py file named app.py with the following code:
 
 ```python
 from google.cloud import bigquery
@@ -37,38 +39,49 @@ for row in rows:
     print(row.name)
 ```
 
-if the run failed and the error message is the following:
-> ImportError: cannot import name 'bigquery' from 'google.cloud' (unknown location)
-
-then upgrade google packages:
-
+In order to use Pandas library I installed the package:
+```cmd
+pip3 install pandas
 ```
-pip install --upgrade google-cloud
-pip install --upgrade google-cloud-bigquery
-pip install --upgrade google-cloud-storage
-```
-source: https://stackoverflow.com/questions/60894798/importerror-cannot-import-name-bigquery
+![image](https://user-images.githubusercontent.com/97738060/158054070-4f0fedb4-d726-4f5d-ba0a-b59a1bed2803.png)
 
 
-Connect GitHub with the Google Cloud Platform repositories (Create a mirrored repository):
-1. Clicked Add repository.
-2. Selected Connect external repository and clicked Continue
-3. In the Project drop-down list, I selected the Google Cloud project to which the mirrored repository belongs. 
-4. In the Git provider drop-down list, I selected GitHub
-5. 
+<h3>Source Controlling </h3>
 
-source: https://cloud.google.com/source-repositories/docs/mirroring-a-github-repository
+In Github, I created a new project named UserStories_project.
 
-
-How to calculate conversion rate:
--- https://support.google.com/google-ads/answer/2684489?hl=en
-
-Initiate Git in Google Cloud Platform:
+Initiate Git in Google Cloud Platform:<br>
 ![image](https://user-images.githubusercontent.com/97738060/158016772-c227be21-8d96-4a4b-8a72-04216feec6ab.png)
 
-PrintScrreen of Running Program 1 (User Story 1):
+Connect Remote Repository: (GitHub) <br>
+![image](https://user-images.githubusercontent.com/97738060/158027309-22a89f9d-c968-4e69-bd65-a8913e44104c.png)
 
+Git Push: <br>
+![image](https://user-images.githubusercontent.com/97738060/158027351-022b43c2-7410-47c1-8a0b-e0260b639f8e.png)
+
+PrintScrreen of Running Program 1 (User Story 1):<br>
 ![image](https://user-images.githubusercontent.com/97738060/158017307-113d4bea-95bf-46b6-8066-37ad11d3ab8f.png)
+
+
+
+
+Next, using the terminal I created a new virtual environment, activated it and continued with the installation of google-cloud-bigquery packages as follow:
+
+```
+pip install virtualenv
+virtualenv BigQueryEnv
+BigQueryEnv\Scripts\activate
+BigQueryEnv\Scripts\pip.exe install google-cloud-bigquery
+```
+
+Next, upgrade pip if need be,
+
+```
+BigQueryEnv\Scripts\python.exe -m pip install --upgrade pip
+```
+
+
+
 
 <h3>Sources</h3>
 Table Schema (https://support.google.com/analytics/answer/3437719?hl=en)<br>
