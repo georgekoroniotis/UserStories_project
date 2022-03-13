@@ -39,7 +39,7 @@ for row in rows:
     print(row.name)
 ```
 
-In order to use Pandas library I installed the package:
+For the scope of the first program, I utilized Pandas library so I had to install the package first:
 ```cmd
 pip3 install pandas
 ```
@@ -63,30 +63,8 @@ PrintScrreen of Running Program 1 (User Story 1):<br>
 ![image](https://user-images.githubusercontent.com/97738060/158017307-113d4bea-95bf-46b6-8066-37ad11d3ab8f.png)
 
 
-
-
-Next, using the terminal I created a new virtual environment, activated it and continued with the installation of google-cloud-bigquery packages as follow:
-
-```
-pip install virtualenv
-virtualenv BigQueryEnv
-BigQueryEnv\Scripts\activate
-BigQueryEnv\Scripts\pip.exe install google-cloud-bigquery
-```
-
-Next, upgrade pip if need be,
-
-```
-BigQueryEnv\Scripts\python.exe -m pip install --upgrade pip
-```
-
-
-
-
 <h3>Sources</h3>
 Table Schema (https://support.google.com/analytics/answer/3437719?hl=en)<br>
 eCommerce Calculation Rate (https://www.meliorum.com.au/blog/matching-big-query-data-with-google-analytics-acquisition-channel-report)<br>
 GoogleAPIs BigQueries (https://github.com/googleapis/python-bigquery/tree/35627d145a41d57768f19d4392ef235928e00f72)<br>
-
-
-
+Cloud Shell (https://cloud.google.com/shell)<br>
