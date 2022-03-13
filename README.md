@@ -16,9 +16,10 @@ For the implementation process:
 1. Create or use an existing project in the Google Cloud Platform. e.g. My first Project
 2. Go to Google Cloud Shell Editor (https://cloud.google.com/shell)
 3. Create a new folder 
-4. Start writing code!
+4. Get started writing code!
 
 ![image](https://user-images.githubusercontent.com/97738060/158053750-fd71c0c3-e408-48b3-839e-a325ad09e9c1.png)
+<br>
 
 In order to test my editor, I created a .py file named app.py with the following code:
 
